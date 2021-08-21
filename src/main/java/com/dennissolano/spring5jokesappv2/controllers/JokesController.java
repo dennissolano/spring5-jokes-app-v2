@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/")
 public class JokesController {
 
-    private JokesService jokesService;
+    private final JokesService jokesService;
 
     public JokesController(JokesService jokesService) {
         this.jokesService = jokesService;
